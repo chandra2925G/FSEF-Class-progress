@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Departments</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 32px 24px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+      font-size: 32px;
+      margin-top: 0;
+      margin-bottom: 36px;
+    }
+
+    .departments-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .dept-box {
+      background-color: #add8e6;
+      border: 2px solid #0000ff;
+      padding: 28px 16px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #000000;
+    }
+
+    @media (max-width: 768px) {
+      .departments-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>College Departments</h1>
+
+  <div class="departments-grid">
+    <div class="dept-box">Computer Science</div>
+    <div class="dept-box">Electronics</div>
+    <div class="dept-box">Information Technology</div>
+    <div class="dept-box">Mechanical</div>
+    <div class="dept-box">Civil</div>
+    <div class="dept-box">Electrical</div>
+  </div>
+</body>
+</html>
